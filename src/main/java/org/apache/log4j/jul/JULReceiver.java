@@ -16,8 +16,8 @@
 */
 package org.apache.log4j.jul;
 
-import org.apache.log4j.plugins.Plugin;
-import org.apache.log4j.plugins.PluginSkeleton;
+import org.apache.log4j.component.plugins.Plugin;
+import org.apache.log4j.component.plugins.PluginSkeleton;
 import org.apache.logging.julbridge.JULLevelConverter;
 import org.apache.logging.julbridge.JULLog4jBridge;
 import org.apache.logging.julbridge.JULLog4jEventConverter;

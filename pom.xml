@@ -164,19 +164,14 @@ temporarily commenting this out, something weird in Eclipse-Maven plugin
   <dependencies>
     <dependency>
       <groupId>log4j</groupId>
-      <artifactId>log4j</artifactId>
-      <version>1.2.15</version>
+      <artifactId>apache-log4j-extras</artifactId>
+      <version>1.2.17</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>log4j</groupId>
-      <artifactId>apache-log4j-component</artifactId>
-      <version>1.0-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <reporting>
