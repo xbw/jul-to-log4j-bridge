@@ -1,0 +1,13 @@
+Key classes
+
+	* {{{apidocs/org/apache/logging/julbridge/JULLog4jBridge.html}org.apache.logging.julbridge.JULLog4jBridge}} - main entry point to configure a bridge
+	
+	* {{{apidocs/org/apache/logging/julbridge/JULLevelConverter.html}org.apache.logging.julbridge.JULLevelConverter}} - Because the JUL Level classes are quite different
+	  this converter interface performs the mapping into the log4j Level space.  In
+	  many cases you can use a default converter.
+
+	* {{{apidocs/org/apache/log4j/jul/JULAppender.html}org.apache.log4j.jul.JULAppender}} - log4j Appender which sends it's events to the java.util.logging system.
+
+	* {{{apidocs/org/apache/log4j/jul/JULReceiver.html}org.apache.log4j.jul.JULReceiver}} - log4j Receiver which imports LogRecords into log4j. 
+	
+		

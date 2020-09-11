@@ -1,0 +1,32 @@
+Examples
+
+* Example 1 - Completely take over JUL and route all LogRecords into log4j 
+
++-------------------+
+JULLog4jBridge.assimilate();
++-------------------+
+
+* Example 2 - As (1), but using log4j XML configuration 
+
++-------------------+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="true">
+   <plugin name="julreceiver" class="org.apache.log4j.jul.JULReceiver" />
+   ......
+</log4j:configuration>
++-------------------+
+
+* Example 3 - Bridge a single JUL Logger
+
++-------------------+
+JULLog4jBridge.bridgeJULLogger("foo");
++-------------------+
+
+	This bridges all events posted to the 'foo' logger into log4j's Logger called 'foo'.
+
+	<<NOTE:>> this does <<NOT>> automatically bridge child Loggers.  
+
+* Example 4 - Reset java.util.logging back to pristine state
+
++-------------------+
+JULLog4jBridge.repatriate();
++-------------------+
